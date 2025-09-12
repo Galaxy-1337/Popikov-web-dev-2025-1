@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+/*стили блоков*/
+div, header, footer, main, nav {
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    line-height: 1.6;
+}
+
+/*Стили текста*/
+header  {
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/*Стили для изображений*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Стили для таблиц*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+
+/*Стили для ссылок*/
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: blue;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+/*Дополнительные стили для навигации*/
+nav a {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+/*Стили header и footer*/
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: blue;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e74c3c;
+}
+
+/*Стили основного контента*/
+main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Стили секций*/
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*Стили списков*/
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
