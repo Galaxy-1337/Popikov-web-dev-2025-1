@@ -28,6 +28,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: black;
+    padding: 0px 20px;
 }
 
 header h1 {
@@ -52,7 +53,9 @@ p {
 
 /*Стили для изображений*/
 img {
-    width: 100%;
+    display: block; 
+    margin: auto;
+    width: 60%;
     height: auto;
 }
 
