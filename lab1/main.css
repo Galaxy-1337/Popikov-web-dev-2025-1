@@ -1,65 +1,50 @@
+/* общий стиль */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/*стили блоков*/
-div, header, footer, main, nav {
-    margin: 0;
-    padding: 10px;
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    color: black;
     line-height: 1.6;
 }
 
-/*Стили текста*/
-header  {
-    margin: 0;
-    padding: 20px;
-}
-
+/* Стили текста */
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: black;
-    padding: 0px 20px;
+    font-size: 80px;
 }
 
 header h1 {
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     color: black;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     color: black;
     margin-bottom: 15px;
 }
 
-/*Стили для изображений*/
+/*Стиль для изображения*/
 img {
     display: block; 
-    margin: auto;
-    width: 60%;
+    margin: 8px auto;
+    width: 70%;
     height: auto;
 }
 
-/*Стили для таблиц*/
+/*Стиль для таблицы*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -68,7 +53,7 @@ table {
 
 th, td {
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid grey;
     text-align: left;
 }
 
@@ -79,15 +64,13 @@ th {
 
 /*Стили для ссылок*/
 a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: blue;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #e74c3c;
+    color: red;
 }
 
 /*Дополнительные стили для навигации*/
@@ -112,6 +95,7 @@ footer {
 
 footer h2 {
     color: white;
+    padding-bottom: 20px ;
 }
 
 footer p {
@@ -124,7 +108,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #e74c3c;
+    color: red;
 }
 
 /*Стили основного контента*/
@@ -144,12 +128,11 @@ section {
 }
 
 /*Стили списков*/
-ul, ol {
+ul {
     margin: 15px 0;
     padding-left: 30px;
 }
 
 li {
     margin-bottom: 8px;
-    font-family: 'Roboto', sans-serif;
 }
