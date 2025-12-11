@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.main {
+    min-height: calc(100vh- 100px);
+    flex: 1 0 autos;
+    flex-grow: 1;
+}
+
+section {
+    padding: 0;
+    box-shadow: none !important;
+}
+
+h2 {
+    text-align: center;
+    color: #140101;
+    font-size: 30px;
+    padding: 10px;
+}
+
+section > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    box-shadow: none;
+}
+
+/* Блюдо*/
+section > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 30px 40px;
+    border-radius: 35px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+    border: 2px solid transparent;
+}
+
+section > div > div:hover {
+    border: 2px solid #993f3f;
+}
+
+section > div > div img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+/* Цена */
+section > div > div p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #993f3f;
+}
+
+/* Название блюда */
+section > div > div p:nth-of-type(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+/* Вес/объем */
+section > div > div p:nth-of-type(3) {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Кнопка */
+section > div > div button {
+    background-color: #f1eee9;
+    margin-top: 15px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section > div > div:hover button {
+    background-color: #a09f9b;
+}
+
+footer h2 {
+    color: white;
+    text-align: left;
+}
+
+footer {
+    max-width: 100%;
+}
+
+/* ≤800px */
+@media (max-width: 800px) {
+    section > div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    nav ul {
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* ≤600px */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav a {
+        font-size: 1.1rem;
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    section > div {
+        grid-template-columns: 1fr;
+    }
+    section > div > div {
+        padding: 20px 30px;
+    }
+    footer h2 {
+        text-align: left;
+    }
+}
