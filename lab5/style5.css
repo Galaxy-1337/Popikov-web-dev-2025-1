@@ -1,0 +1,417 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav a.active {
+    color: rgb(230, 71, 43);
+}
+
+.menu-section {
+    margin: 40px 0;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dish-card:hover {
+    border: 2px solid rgb(230, 71, 43);
+}
+
+.dish-card img {
+    width: 100%;
+    /* height: 225px; */
+    border-radius: 35px;
+    display: block;
+}
+
+.dish-price {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.dish-title {
+    font-size: 23px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.dish-weight {
+    color: #777;
+    margin-top: 8px;
+}
+
+.add-btn {
+    background-color: #f1eee9;
+    margin-top: 16px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.dish-card:hover .add-btn {
+    background-color: rgb(230, 71, 43);
+    color: #fff;
+}
+
+.add-btn {
+    margin-top: auto;
+}
+
+
+/* Стили формы заказа */
+.order-form-section {
+    margin: 40px 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.order-form-section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-block, .customer-block {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.order-block h3, .customer-block h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="time"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(230, 71, 43);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.delivery-time-group {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.delivery-time-group legend {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3436;
+    padding: 0 10px;
+}
+
+.radio-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-group label {
+    margin: 0;
+    font-weight: 400;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.reset-btn, .submit-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #5a6268;
+}
+
+.submit-btn {
+    background-color: rgb(230, 71, 43);
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: rgb(230, 71, 43);
+}
+
+/* Стили для фильтров */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2d3436;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.filter-btn:hover {
+    border-color: rgb(230, 71, 43);
+    background-color: #fff5f5;
+}
+
+.filter-btn.active {
+    background-color: rgb(230, 71, 43);
+    color: #fff;
+    border-color: rgb(230, 71, 43);
+}
+
+/* Стили для динамического заказа */
+.order-content {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.order-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.order-item label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 8px;
+}
+
+.selected-dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.dish-name {
+    font-size: 1rem;
+    color: #2d3436;
+    flex: 1;
+}
+
+.not-selected {
+    color: #6c757d;
+    font-style: italic;
+    padding: 10px;
+    margin: 0;
+}
+
+.no-selection {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 20px;
+    margin: 0;
+}
+
+.order-cost-block {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #e9ecef;
+}
+
+.cost-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid rgb(230, 71, 43);
+}
+
+.cost-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3436;
+}
+
+.cost-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(230, 71, 43);
+}
+
+@media (max-width: 800px) {
+    .dishes-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .nav {
+        justify-content: space-between; 
+    }
+
+    .form-container {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        text-align: center; 
+    }
+
+    .nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 1.35rem; 
+    }
+
+    .menu-section h2 {
+        text-align: center; 
+    }
+
+    .dishes-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .order-form-section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    .order-block, .customer-block {
+        padding: 20px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .reset-btn, .submit-btn {
+        width: 100%;
+    }
+}

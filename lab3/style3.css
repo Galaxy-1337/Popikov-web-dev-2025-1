@@ -29,7 +29,7 @@ section {
     width: 100%;
 }
 .order h2 {
-    color: #993f3f;
+    color: rgb(230, 71, 43);
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
@@ -53,10 +53,10 @@ section {
 
 .order-column h3,
 .customer-column h3 {
-    color: #993f3f;
+    color: rgb(230, 71, 43);
     font-size: 24px;
     margin-bottom: 25px;
-    border-bottom: 2px solid #993f3f;
+    border-bottom: 2px solid rgb(230, 71, 43);
     padding-bottom: 10px;
 }
 
@@ -93,7 +93,7 @@ section {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #993f3f;
+    border-color: rgb(230, 71, 43);
 }
 
 .form-group textarea {
@@ -197,7 +197,7 @@ section {
 }
 
 .submit-btn {
-    background-color: #993f3f;
+    background-color: rgb(230, 71, 43);
     color: white;
 }
 

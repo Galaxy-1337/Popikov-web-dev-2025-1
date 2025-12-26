@@ -42,7 +42,7 @@ section > div > div {
 }
 
 section > div > div:hover {
-    border: 2px solid #993f3f;
+    border: 2px solid rgb(230, 71, 43);
 }
 
 section > div > div img {
@@ -54,7 +54,7 @@ section > div > div img {
 section > div > div p:first-of-type {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #993f3f;
+    color: rgb(230, 71, 43);
 }
 
 /* Название блюда */
