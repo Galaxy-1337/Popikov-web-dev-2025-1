@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №6</title>
+    <link rel="stylesheet" href="/lab4/style4.css">
+    <link rel="stylesheet" href="/lab1/style1.css">
+    <link rel="stylesheet" href="/lab2/style2.css">
+    <link rel="stylesheet" href="/lab3/style3.css">
+    <link rel="stylesheet" href="/lab5/style5.css">
+    <link rel="stylesheet" href="/lab6/style6.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Food Construct</h1>
+            <nav>
+                <ul>
+                    <li><a href="/lab1/index.html#about">О нас</a></li>
+                    <li><a href="#advantages" class="active">Собрать ланч</a></li>
+                    <li><a href="#order">Заказы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="soup">
+                <h2>Выберите суп</h2>
+                <div class="dishes-grid"></div>
+            </section>
+
+            <section id="main">
+                <h2>Выберите блюдо</h2>
+                <div class="dishes-grid"></div>
+            </section>
+
+            <section id="salat">
+                <h2>Выберите салат или стартер</h2>
+                <div class="dishes-grid"></div>
+            </section>
+
+            <section id="drink">
+                <h2>Выберите напиток</h2>
+                <div class="dishes-grid"></div>
+            </section>
+
+            <section id="dessert">
+                <h2>Выберите десерт</h2>
+                <div class="dishes-grid"></div>
+            </section>
+        </div>
+
+        <section class="order">
+            <div class="form">
+                <h2 class="title">Сделать заказ</h2>
+                <form id="order-form" action="https://httpbin.org/post" method="POST">
+                    <div class="form-columns">
+                        <div class="order-column">
+                            <div class="form-group">
+                                <div id="order-summary">
+                                    <p class="no-selection">Пока ничего не выбрано</p>
+                                </div>
+                                <label for="comments">Комментарии к заказу</label>
+                                <textarea id="comments" name="comments" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="customer-column">
+                            <h3>Ваши данные</h3>
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                <label for="newsletter">Получать информацию о скидках и акциях</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Адрес доставки</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <p class="delivery-note">*Доставка осуществляется только по Москве*</p>
+
+                            <fieldset class="delivery-time">
+                                <legend>Время доставки:</legend>
+                                <div class="radio-group">
+                                    <input type="radio" id="asap" name="delivery_time" value="asap" required>
+                                    <label for="asap">Как можно скорее</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="scheduled" name="delivery_time" value="scheduled">
+                                    <label for="scheduled">К указанному времени</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="delivery-time-input">Укажите время доставки</label>
+                                    <input type="time" id="delivery-time-input" name="delivery_time_input" min="07:00" max="23:00" step="300">
+                                </div>
+                            </fieldset>
+                            <p class="time-note">*Доступное время доставки с 6:00 до 00:00*</p>
+
+                            <div class="form-buttons">
+                                <button type="reset" class="reset-btn">Сбросить</button>
+                                <button type="submit" class="submit-btn">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <h2>Контакты</h2>
+        <p>Позвонить нам: <a href="tel:+70000000000">+7-000-000-00-00</a></p>
+        <p>Написать нам: <a href="mailto:someone@else.com"> someone@else.com</a></p>
+    </footer>
+
+    <!-- ✅ Порядок важен: сначала menu.js, потом combo.js -->
+    <script src="menu.js"></script>
+    <script src="combo.js"></script>
+    <script src="order.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
